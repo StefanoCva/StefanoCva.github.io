@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>table,td{border: solid 1px black;border-collapse: collapse;}</style>
+</head>
+<body>
+    <h1>Usando Tablas</h1>
+    <table>
+        <tr>
+            <td>Fila 1 columna1</td>
+            <td colspan="3">Fila 1 columna 2, 3 y 4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Fila 2 y 3 columna 2 </td>
+            <td>Fila2 columna2</td>
+            <td>Fila2 columna3</td>
+            <td>Fila2 columna4</td>
+        </tr>
+        <tr>
+            <td>Fila3 columna2</td>
+            <td>Fila3 columna3</td>
+            <td>Fila3 columna4</td>
+        </tr>
+    </table>
+--> Tabla 3
+    <table>
+        <tr><th>Dia</th><th>Horario</th></tr>
+        <tr><td>Lunes a Viernes</td><td>8:00 - 17:00</td></tr>
+        <tr><td>Sabado</td><td>9:00 - 13:00</td></tr>
+        <tr><td>Domingo</td><td>Cerrado</td></tr>
+    </table><br>
+    <table>
+        <tr>
+            <th>nombre</th>
+            <th>Cargo</th>
+            <th>Email</th>
+        </tr>
+    </table>
+--> tabla 4 
+    <table>
+        <tr><th>servicio</th><th>Precio</th></tr>
+        <tr><td>Instalacion de software</td><td>s/ . 25</td></tr>
+    </table>
+    <hr>
+    <h1>Trabajando con formularios</h1>
+    <h2>input type=</h2>
+    <form action="Class09.html">
+    <label for="">Nombre:</label><br>
+    <input type="text" required><br>
+    <label for="">Correo</label><br>
+    <input type="email" required placeholder="tucorreo@dominio"><br>
+    <label for="">telefono</label><br>
+    <input type="tel" required placeholder="+51999999"><br>
+    <label for="">Contraseña</label><br>
+    <input type="password" name="" id=""><br>
+    <label for="">Buscar</label><br>
+    <input type="search" name="" id=""><br>
+    <label for="">Edad</label><br>
+    <input type="number" name="" id=""><br>
+    <!--Label despues-->
+    <input type="radio" name="" id="">
+    <label for="">Enviar correos promocionales</label><br>
+    <input type="checkbox" name="" id="">
+    <label for="">Aceptar terminos y condiciones</label><br>
+    <!--Botones-->
+    <br><input type="submit" value="enviar">
+    <input type="reset" value="Limpiar">
+    <input type="button" value="Siguiente">
+    <!--Otros Elemento-->
+    <label for="">Selecciona tu país:</label>
+    <select name="" id="">
+        <option value="country">Pais</option>
+        <option value="Arg">Argentina</option>
+        <option value="Per">Perú</option>
+        <option value="BRL">Brasil</option>
+        <option value="USA">Estados Unidos</option>
+<br>
+<label for="com">agrega un comentario</label>
+<textarea name="com" id="" cols="20" rows="10"></textarea>
+</select>
+</form>
+<!--Texto y entidades-->
+<h3>mi tutorial</h3>
+<p>Aprende como usar &lt;hr&gt;como un elemento mas</p>
+<br><br>
+</body>
+</html>
