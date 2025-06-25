@@ -1,0 +1,111 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f1e3;
+            color: #3e2f2f;
+            margin: 0;
+            padding: 0;
+}
+
+header {
+            background-color: #6f4e37;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+}
+
+header h1 {
+            margin: 0;
+            font-size: 2.5em;
+}
+
+.contenido {
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: center;
+            padding: 0 20px;
+}
+
+.contenido img {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contenido p {
+            font-size: 1.2em;
+            margin: 20px 0;
+}
+
+ul {
+            list-style-type: none;
+            padding: 0;
+}
+
+ul li {
+            background-color: #e6d3b3;
+            margin: 10px auto;
+            padding: 10px 15px;
+            max-width: 300px;
+            border-radius: 8px;
+            font-size: 1.1em;
+}
+
+footer {
+            background-color: #6f4e37;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+}
+/* Resp */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .contenido p,
+            .formulario-contacto label,
+            .formulario-contacto input,
+            .formulario-contacto textarea,
+            .formulario-contacto button {
+                font-size: 1em;
+            }
+        }
+/*Fondo*/
+.hero {
+      background: url('') no-repeat center/cover;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #4e342e;
+      position: relative;
+}
+.hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(215 204 200 / 0.75);
+      backdrop-filter: blur(10px);
+      z-index: 1;
+      border-radius: 16px;
+}
+.hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 0 16px;
+}
+.hero-content h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      margin-bottom: 24px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.15);
+}
+.hero-content p {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #6d4c41;
+      text-shadow: 1px 1px 6px rgba(255,255,255,0.6);
+}
